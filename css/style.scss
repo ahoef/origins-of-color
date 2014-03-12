@@ -1,0 +1,222 @@
+@import 'grid';
+
+@import url('fontawesome.min.css');
+
+@font-face {
+  font-family: Icons;
+  src: url("fontawesome-webfont.ttf");
+}
+
+i {
+  font-family: Icons;
+  color: #fff;
+}
+
+.fa {
+  font-family: Icons;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Anaheim', sans-serif;
+}
+
+a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+
+.content {
+  height: 100%;
+  overflow: hidden;
+}
+
+.fw-container {
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+
+  .container {
+    position: relative;
+    text-align: center;
+    padding: 1% 0;
+    margin: 0 auto;
+    .inner-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 75px 40px;
+    }
+  }
+}
+
+.question {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+.answers {
+  font-size: 18px;
+  line-height: 2.5em;
+  font-family: 'Open Sans', sans-serif;
+  li {
+    display: inline-block;
+    margin-right: 40px;
+    &:last-child {
+      margin-right: 0px;
+    }
+    input {
+      margin-right: 10px;
+    }
+  }
+}
+.feedback {
+  margin-top: 50px;
+  font-size: 20px;
+  .explanation {
+    p {
+      text-align: left;
+    }
+    .quote {
+      margin-left: 10%;
+      text-align: left;
+      font-size: 20px;
+      color: #A09F9F;
+      font-style: italic;
+     }
+  }
+}
+
+
+
+.slide-odd {
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+.slide-even {
+  z-index: 2;
+  background-color: #333232;
+  color: #fff;
+}
+
+#slide-1 {
+  background-image: url(../images/looking-up.jpg);
+  height: 900px;
+  .container {
+    position: relative;
+    .inner-container {
+      // margin-top: 10%;
+      // margin-right: 5%;
+      color: #fff;
+      position: absolute;
+      top: 200px;;
+      right: 20%;
+    }
+  }
+
+  .headline {
+    .small-text {
+      font-size: 30px;
+    }
+    .large-text {
+      font-size: 50px;
+    }
+  }
+}
+
+#slide-2 .inner-container,
+ #slide-4 .inner-container {
+
+}
+
+#slide-2 .inner-container .caption,
+  #slide-4 .inner-container .caption {
+  padding: 5px 164px;
+}
+
+#slide-3 {
+  background-image: url(../images/smiths.jpg);
+  height: 900px;
+}
+
+#slide-5 {
+  background: url(../images/group.jpg) center center;
+  background-size: cover;
+  height: 900px;
+  background-attachment: fixed;
+}
+
+#slide-6 {
+  li {
+    display: block;
+    text-align: left;
+    padding-left: 30%;
+  }
+}
+
+
+#slide-7 {
+  background: url(../images/7.jpg) center center;
+  background-size: cover;
+  height: 800px;
+  background-attachment: fixed;
+}
+
+#slide-8 {
+  .inner-container {
+    width: 80%;
+    .answers {
+      li {
+        margin-right: 10px;
+      }
+      img {
+        width: 80%;
+        margin-bottom: 60px;
+      }
+    }
+
+  }
+}
+
+#slide-9 {
+  background: url(../images/cityscape_reflect.jpg);
+  background-size: cover;
+  height: 900px;
+  background-attachment: fixed;
+}
+
+#slide-11 {
+  background: url(../images/Morrissey-now.jpg);
+  background-size: cover;
+  height: 900px;
+  background-attachment: fixed;
+}
+
+#slide-13 {
+  background: url(../images/13.jpg) center center;
+  background-size: cover;
+  height: 900px;
+  background-attachment: fixed;
+}
+
+footer {
+  background-color: black;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  .about-link {
+    margin-bottom: 20px;
+  }
+  .about {
+    display: block;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}

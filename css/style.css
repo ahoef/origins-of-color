@@ -1,0 +1,293 @@
+@import url("fontawesome.min.css");
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11, .col12 {
+  display: inline;
+  float: left;
+  position: relative;
+  margin-left: 1%;
+  margin-right: 1%; }
+
+.col1 {
+  width: 6.333%; }
+
+.col2 {
+  width: 14.667%; }
+
+.col3 {
+  width: 23%; }
+
+.col4 {
+  width: 31.333%; }
+
+.col5 {
+  width: 39.667%; }
+
+.col6 {
+  width: 48%; }
+
+.col7 {
+  width: 56.333%; }
+
+.col8 {
+  width: 64.667%; }
+
+.col9 {
+  width: 73%; }
+
+.col10 {
+  width: 81.333%; }
+
+.col11 {
+  width: 89.667%; }
+
+.col12 {
+  margin-left: 0;
+  width: 100%; }
+
+/* General small screen Mobile
+  ============================================================================================== */
+@media handheld, only screen and (max-width: 768px) {
+  body {
+    font-size: 1.0em;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none; }
+
+  .content {
+    width: 100%;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0; }
+
+  .col1,
+  .col2,
+  .col3,
+  .col4,
+  .col5,
+  .col6,
+  .col7,
+  .col8,
+  .col9,
+  .col10,
+  .col11,
+  .col12 {
+    width: 98%; } }
+/* Clear Helpers
+  ============================================================================================== */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+
+.clearfix {
+  *zoom: 1; }
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0; }
+
+.clearfix:after {
+  clear: both; }
+
+/* Media - Fluid Images - Video
+  ============================================================================================== */
+figure {
+  margin: 0; }
+
+object,
+embed,
+video {
+  max-width: 100%;
+  _width: 100%; }
+
+/* Fluid images */
+img {
+  border: 0;
+  -ms-interpolation-mode: bicubic; }
+
+/* Improve IE's resizing of images */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Correct IE9 overflow */
+img {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle; }
+
+img[src*="maps.gstatic.com"],
+img[src*="googleapis.com"] {
+  max-width: none; }
+
+@font-face {
+  font-family: Icons;
+  src: url("fontawesome-webfont.ttf"); }
+
+i {
+  font-family: Icons;
+  color: #fff; }
+
+.fa {
+  font-family: Icons; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Anaheim', sans-serif; }
+
+a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #fff; }
+
+.content {
+  height: 100%;
+  overflow: hidden; }
+
+.fw-container {
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover; }
+  .fw-container .container {
+    position: relative;
+    text-align: center;
+    padding: 1% 0;
+    margin: 0 auto; }
+    .fw-container .container .inner-container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 75px 40px; }
+
+.question {
+  font-size: 30px;
+  margin-bottom: 50px; }
+
+.answers {
+  font-size: 18px;
+  line-height: 2.5em;
+  font-family: 'Open Sans', sans-serif; }
+  .answers li {
+    display: inline-block;
+    margin-right: 40px; }
+    .answers li:last-child {
+      margin-right: 0px; }
+    .answers li input {
+      margin-right: 10px; }
+
+.feedback {
+  margin-top: 50px;
+  font-size: 20px; }
+  .feedback .explanation p {
+    text-align: left; }
+  .feedback .explanation .quote {
+    margin-left: 10%;
+    text-align: left;
+    font-size: 20px;
+    color: #A09F9F;
+    font-style: italic; }
+
+.slide-odd {
+  background-attachment: fixed;
+  z-index: 1; }
+
+.slide-even {
+  z-index: 2;
+  background-color: #333232;
+  color: #fff; }
+
+#slide-1 {
+  background-image: url(../images/looking-up.jpg);
+  height: 900px; }
+  #slide-1 .container {
+    position: relative; }
+    #slide-1 .container .inner-container {
+      color: #fff;
+      position: absolute;
+      top: 200px;
+      right: 20%; }
+  #slide-1 .headline .small-text {
+    font-size: 30px; }
+  #slide-1 .headline .large-text {
+    font-size: 50px; }
+
+#slide-2 .inner-container .caption,
+#slide-4 .inner-container .caption {
+  padding: 5px 164px; }
+
+#slide-3 {
+  background-image: url(../images/smiths.jpg);
+  height: 900px; }
+
+#slide-5 {
+  background: url(../images/group.jpg) center center;
+  background-size: cover;
+  height: 900px;
+  background-attachment: fixed; }
+
+#slide-6 li {
+  display: block;
+  text-align: left;
+  padding-left: 30%; }
+
+#slide-7 {
+  background: url(../images/7.jpg) center center;
+  background-size: cover;
+  height: 800px;
+  background-attachment: fixed; }
+
+#slide-8 .inner-container {
+  width: 80%; }
+  #slide-8 .inner-container .answers li {
+    margin-right: 10px; }
+  #slide-8 .inner-container .answers img {
+    width: 80%;
+    margin-bottom: 60px; }
+
+#slide-9 {
+  background: url(../images/cityscape_reflect.jpg);
+  background-size: cover;
+  height: 900px;
+  background-attachment: fixed; }
+
+#slide-11 {
+  background: url(../images/Morrissey-now.jpg);
+  background-size: cover;
+  height: 900px;
+  background-attachment: fixed; }
+
+#slide-13 {
+  background: url(../images/13.jpg) center center;
+  background-size: cover;
+  height: 900px;
+  background-attachment: fixed; }
+
+footer {
+  background-color: black;
+  padding: 40px;
+  text-align: center;
+  color: white; }
+  footer .about-link {
+    margin-bottom: 20px; }
+  footer .about {
+    display: block;
+    max-width: 900px;
+    margin: 0 auto; }
