@@ -33,6 +33,14 @@ a {
   color: #fff;
 }
 
+h2 {
+  color: #fff;
+  // position: absolute;
+  // top: 200px;;
+  // right: 20%;
+  margin-top: 600px;
+  font-size: 80px;
+}
 .content {
   height: 100%;
   overflow: hidden;
@@ -107,7 +115,7 @@ a {
 }
 
 #slide-1 {
-  background-image: url(../images/looking-up.jpg);
+  background-image: url(../images/demo-site-photos/ochre.jpg);
   height: 900px;
   .container {
     position: relative;
@@ -142,12 +150,12 @@ a {
 }
 
 #slide-3 {
-  background-image: url(../images/smiths.jpg);
+  background-image: url(../images/demo-site-photos/kohl.jpg);
   height: 900px;
 }
 
 #slide-5 {
-  background: url(../images/group.jpg) center center;
+  background: url(../images/demo-site-photos/magenta.jpg) center center;
   background-size: cover;
   height: 900px;
   background-attachment: fixed;
@@ -163,7 +171,7 @@ a {
 
 
 #slide-7 {
-  background: url(../images/7.jpg) center center;
+  background: url(../images/demo-site-photos/royal-purple.jpg) center center;
   background-size: cover;
   height: 800px;
   background-attachment: fixed;
@@ -186,21 +194,42 @@ a {
 }
 
 #slide-9 {
-  background: url(../images/cityscape_reflect.jpg);
+  background: url(../images/demo-site-photos/verdigris.jpg);
   background-size: cover;
   height: 900px;
   background-attachment: fixed;
 }
 
 #slide-11 {
-  background: url(../images/Morrissey-now.jpg);
+  background: url(../images/demo-site-photos/emerald.jpg);
   background-size: cover;
   height: 900px;
   background-attachment: fixed;
 }
 
 #slide-13 {
-  background: url(../images/13.jpg) center center;
+  background: url(../images/demo-site-photos/cinnibar.jpg) center center;
+  background-size: cover;
+  height: 900px;
+  background-attachment: fixed;
+}
+
+#slide-15 {
+  background: url(../images/demo-site-photos/brown.jpg) center center;
+  background-size: cover;
+  height: 900px;
+  background-attachment: fixed;
+}
+
+#slide-17 {
+  background: url(../images/demo-site-photos/prussian-blue.jpg) center center;
+  background-size: cover;
+  height: 900px;
+  background-attachment: fixed;
+}
+
+#slide-19 {
+  background: url(../images/demo-site-photos/deep-champagne.jpg) center center;
   background-size: cover;
   height: 900px;
   background-attachment: fixed;
