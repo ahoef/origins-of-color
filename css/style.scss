@@ -24,7 +24,6 @@
 }
 
 body {
-
   font-family: 'Vollkorn', serif;
   color: #444444;
   font-size: 20px;
@@ -33,10 +32,6 @@ body {
 
 a {
   color: #fff;
-}
-
-p {
-
 }
 
 .text-callout {
@@ -53,16 +48,13 @@ h2 {
   letter-spacing: 1px;
   text-align: right;
   margin-right: 5%;
-  padding-top: 659px;
+  padding-top: 657px;
 }
 
 .fw-container {
   position: relative;
   max-width: 1400px;
-  margin: 0 auto;
 }
-
-
 
 .slide-odd {
   background-attachment: fixed;
@@ -74,24 +66,28 @@ h2 {
 .slide-even {
   z-index: 2;
   background-color: #ffffff;
+  text-align: center;
   //   -moz-box-shadow:    0px 5px 10px 6px #888;
   // -webkit-box-shadow: 0px 5px 10px 6px #888;
   // box-shadow:         0px 5px 10px 6px #888;
   // height: 500px;
 }
 .text {
-  width: 50%;
+  width: 56%;
   display: inline-block;
   vertical-align: top;
   margin: 0 auto;
-  padding: 100px;
-  // margin:0 auto;
+  padding: 10% 5%;
 }
 .color-splash {
-  width: 40%;
+  width: 36%;
   display: inline-block;
+  // padding: 30px;
   margin: 0 auto;
-  text-align: center;
+  img {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 #slide-1 {
@@ -142,7 +138,7 @@ h2 {
     }
   }
   h2 {
-        padding-top: 859px;
+        padding-top: 857px;
       }
 }
 
@@ -150,8 +146,16 @@ h2 {
   background-image: url(../images/demo-site-photos/verdigris.jpg);
 }
 
+
+
 #slide-5 {
   background-image: url(../images/demo-site-photos/ochre.jpg);
+}
+
+#slide-6 {
+  // .color-splash {
+  //   padding: 30px;
+  // }
 }
 
 #slide-7 {
@@ -159,11 +163,19 @@ h2 {
 }
 
 #slide-8 {
-
+  .color-splash {
+    padding: 30px;
+  }
 }
 
 #slide-9 {
   background-image: url(../images/demo-site-photos/magenta.jpg);
+}
+
+#slide-10 {
+  // .color-splash {
+  //   padding: 30px;
+  // }
 }
 
 #slide-11 {
@@ -176,6 +188,12 @@ h2 {
 
 #slide-15 {
   background-image: url(../images/demo-site-photos/brown.jpg);
+}
+
+#slide-16 {
+  // .color-splash {
+  //   padding: 30px;
+  // }
 }
 
 #slide-17 {
