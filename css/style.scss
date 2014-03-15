@@ -1,23 +1,21 @@
-@import 'grid';
-.clear {
-  clear: both;
-  display: block;
-  overflow: hidden;
+// @import 'grid';
+.clearfix:after {
   visibility: hidden;
-  width: 0;
-  height: 0;
-}
-.clearfix {
-  *zoom: 1;
-}
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.clearfix:after {
+  display: block;
+  font-size: 0;
+  content: " ";
   clear: both;
+  height: 0;
+  }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 * {
@@ -25,20 +23,15 @@
   padding: 0;
 }
 
-
-
 body {
+
   font-family: 'Vollkorn', serif;
   color: #444444;
-  font-size: 18px;
-  line-height: 36px;
+  font-size: 20px;
+  line-height: 40px;
 }
 
 a {
-  display: block;
-  height: 100%;
-  width: 100%;
-  text-decoration: none;
   color: #fff;
 }
 
@@ -48,7 +41,7 @@ p {
 
 .text-callout {
   font-style: italic;
-  font-size: 40px;
+  font-size: 38px;
 }
 
 h2 {
@@ -56,29 +49,24 @@ h2 {
   font-size: 60px;
   text-transform: uppercase;
   font-family: 'Lato', sans-serif;
-  // font-family: 'Roboto', sans-serif;
   font-weight: 300;
   letter-spacing: 1px;
   text-align: right;
   margin-right: 5%;
   padding-top: 659px;
 }
-.content {
-  height: 100%;
-}
 
 .fw-container {
-  background-position: 50% 0;
-  background-repeat: no-repeat;
   position: relative;
-  background-size: cover;
-
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 
 
 .slide-odd {
   background-attachment: fixed;
+  background-size: cover;
   z-index: 1;
   height: 700px;
 }
@@ -89,93 +77,82 @@ h2 {
   //   -moz-box-shadow:    0px 5px 10px 6px #888;
   // -webkit-box-shadow: 0px 5px 10px 6px #888;
   // box-shadow:         0px 5px 10px 6px #888;
-  height: 500px;
-  // .inner-container {
-  //   max-width: 1280px;
-  //   margin:0 auto;
-  //   display: inline-block;
-  //   width: 49%;
-  // }
+  // height: 500px;
 }
 .text {
-  // padding: 100px;
-  margin:0 auto;
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 auto;
+  padding: 100px;
+  // margin:0 auto;
 }
 .color-splash {
-  // margin: 20px;
+  width: 40%;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #slide-1 {
+  background-image: url(../images/demo-site-photos/royal-purple.jpg);
   height: 900px;
-  h2 {
-    padding-top: 859px;
-  }
   .header {
     position: absolute;
     top: 5%;
     left: 5%;
     color: #ffffff;
     max-width: 660px;
-text-align: center;
+    text-align: center;
     h1 {
-
       font-size: 100px;
       // max-width: 200px;
       font-weight: 400;
       line-height: 65px;
       text-align: left;
     }
-  .small {
-    font-size: 50px;
-    font-style: italic;
-    padding-right: 20px;
-    &:first-child {
-      padding-left: 60px;
-
+    .small {
+      font-size: 50px;
+      font-style: italic;
+      padding-right: 20px;
+      &:first-child {
+        padding-left: 60px;
+      }
+    }
+    .sub-header {
+      font-family: 'Lato', sans-serif;
+      font-size: 27px;
+      letter-spacing: 1px;
+      margin-top: 24px;
+      font-weight: 300;
+    }
+    .arrow {
+      background-color: rgba(255, 255, 255, .1);
+      border-radius: 100%;
+      width: 100px;
+      height: 100px;
+      position: relative;
+      margin: 0 auto;
+      margin-top: 100px;
+      img {
+        position: absolute;
+        left: 17px;
+        top: 35px;
+      }
     }
   }
-  .sub-header {
-    font-family: 'Lato', sans-serif;
-font-size: 27px;
-letter-spacing: 1px;
-margin-top: 24px;
-font-weight: 300;
-margin-bottom: 80px;
-  }
-  .arrow {
-    background-color: rgba(255, 255, 255, .1);
-    border-radius: 100%;
-    width: 100px;
-    height: 100px;
-    position: relative;
-    margin: 0 auto;
-    img {
-      position: absolute;
-left: 17px;
-top: 35px;
-    }
-  }
-
-  }
-  background-image: url(../images/demo-site-photos/royal-purple.jpg);
-
-
+  h2 {
+        padding-top: 859px;
+      }
 }
 
 #slide-3 {
   background-image: url(../images/demo-site-photos/verdigris.jpg);
-
 }
 
 #slide-5 {
   background-image: url(../images/demo-site-photos/ochre.jpg);
-
 }
-
-#slide-6 {
-
-}
-
 
 #slide-7 {
   background-image: url(../images/demo-site-photos/kohl.jpg);
@@ -187,38 +164,37 @@ top: 35px;
 
 #slide-9 {
   background-image: url(../images/demo-site-photos/magenta.jpg);
-
 }
 
 #slide-11 {
   background-image: url(../images/demo-site-photos/emerald.jpg);
-
 }
 
 #slide-13 {
   background-image: url(../images/demo-site-photos/cinnibar.jpg);
-
 }
 
 #slide-15 {
   background-image: url(../images/demo-site-photos/brown.jpg);
-
 }
 
 #slide-17 {
   background-image: url(../images/demo-site-photos/prussian-blue.jpg);
-
 }
 
 #slide-19 {
   background-image: url(../images/demo-site-photos/deep-champagne.jpg);
-
 }
 
 footer {
+  font-size: 16px;
   background-color: black;
   padding: 40px;
   text-align: center;
   color: white;
-
+  a {
+    &:hover {
+     color:#8BC9BE;
+    }
+  }
 }
