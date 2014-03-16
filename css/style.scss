@@ -1,4 +1,3 @@
-// @import 'grid';
 .clearfix:after {
   visibility: hidden;
   display: block;
@@ -7,8 +6,6 @@
   clear: both;
   height: 0;
   }
-* html .clearfix             { zoom: 1; } /* IE6 */
-*:first-child+html .clearfix { zoom: 1; } /* IE7 */
 
 *,
 *:before,
@@ -26,17 +23,17 @@
 body {
   font-family: 'Vollkorn', serif;
   color: #444444;
-  font-size: 20px;
-  line-height: 40px;
 }
 
 a {
-  color: #fff;
+  color: #ffffff;
 }
 
-.text-callout {
-  font-style: italic;
-  font-size: 38px;
+h1 {
+  font-size: 100px;
+  font-weight: 400;
+  line-height: 65px;
+  text-align: left;
 }
 
 h2 {
@@ -48,7 +45,16 @@ h2 {
   letter-spacing: 1px;
   text-align: right;
   margin-right: 5%;
-  padding-top: 657px;
+  padding-top: 641px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 40px;
+    .text-callout {
+    font-style: italic;
+    font-size: 38px;
+  }
 }
 
 .fw-container {
@@ -82,7 +88,6 @@ h2 {
 .color-splash {
   width: 36%;
   display: inline-block;
-  // padding: 30px;
   margin: 0 auto;
   img {
     width: 100%;
@@ -93,20 +98,13 @@ h2 {
 #slide-1 {
   background-image: url(../images/demo-site-photos/royal-purple.jpg);
   height: 900px;
-  .header {
+  header {
     position: absolute;
     top: 5%;
     left: 5%;
     color: #ffffff;
     max-width: 660px;
     text-align: center;
-    h1 {
-      font-size: 100px;
-      // max-width: 200px;
-      font-weight: 400;
-      line-height: 65px;
-      text-align: left;
-    }
     .small {
       font-size: 50px;
       font-style: italic;
@@ -114,13 +112,6 @@ h2 {
       &:first-child {
         padding-left: 60px;
       }
-    }
-    .sub-header {
-      font-family: 'Lato', sans-serif;
-      font-size: 27px;
-      letter-spacing: 1px;
-      margin-top: 24px;
-      font-weight: 300;
     }
     .arrow {
       background-color: rgba(255, 255, 255, .1);
@@ -138,44 +129,24 @@ h2 {
     }
   }
   h2 {
-        padding-top: 857px;
-      }
+    padding-top: 841px;
+  }
 }
 
 #slide-3 {
   background-image: url(../images/demo-site-photos/verdigris.jpg);
 }
 
-
-
 #slide-5 {
   background-image: url(../images/demo-site-photos/ochre.jpg);
-}
-
-#slide-6 {
-  // .color-splash {
-  //   padding: 30px;
-  // }
 }
 
 #slide-7 {
   background-image: url(../images/demo-site-photos/kohl.jpg);
 }
 
-#slide-8 {
-  .color-splash {
-    padding: 30px;
-  }
-}
-
 #slide-9 {
   background-image: url(../images/demo-site-photos/magenta.jpg);
-}
-
-#slide-10 {
-  // .color-splash {
-  //   padding: 30px;
-  // }
 }
 
 #slide-11 {
@@ -188,12 +159,6 @@ h2 {
 
 #slide-15 {
   background-image: url(../images/demo-site-photos/brown.jpg);
-}
-
-#slide-16 {
-  // .color-splash {
-  //   padding: 30px;
-  // }
 }
 
 #slide-17 {
@@ -213,6 +178,53 @@ footer {
   a {
     &:hover {
      color:#8BC9BE;
+    }
+  }
+}
+
+@media (max-width: 1060px) {
+  .text {padding: 8% 5%;}
+}
+
+@media (max-width: 950px) {
+  .text p {
+    font-size: 18px;
+    line-height: 36px;
+  }
+  .text-callout {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 725px) {
+  .text, .color-splash {
+    display: block;
+    width: 75%;
+  }
+  .text {padding: 5% 5%;}
+  #slide-1 header h1 {
+    font-size: 85px;
+    line-height: 50px;
+  }
+  #slide-1 header .small {
+    font-size: 38px;
+    font-style: italic;
+    padding-right: 15px;
+    &:first-child {
+      padding-left: 45px;
+    }
+  }
+}
+
+@media (max-width: 585px) {
+  #slide-1 header h1 {line-height: 80px;}
+  #slide-1 header .small {
+    line-height: 50px;
+    font-size: 38px;
+    font-style: italic;
+    padding-right: 15px;
+    &:first-child {
+      padding-left: 45px;
     }
   }
 }
